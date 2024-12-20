@@ -1,0 +1,354 @@
+/* Style untuk body dan header */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 0;
+}
+
+header .banner {
+    position: relative;
+    width: 100%;
+    height: 320px; /* Tinggi banner */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Pastikan gambar sesuai frame */
+}
+
+header .banner-text {
+    display: none; /* Sembunyikan teks di tengah gambar */
+}
+
+nav {
+    background-color: #007BFF;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.artikel-list {
+    list-style-position: left; 
+    padding-left: 20px; 
+    text-align: left;
+    margin: 0; 
+}
+
+.artikel-item {
+    font-size: 18px; 
+    margin: 5px 0; 
+    color: #333; 
+}
+
+.artikel-item strong {
+    color: #050a0e; 
+}
+
+/* Style untuk halaman artikel */
+main {
+    padding: 2rem;
+    background-color: #fff;
+    margin: 1rem auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+main h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #007BFF;
+}
+
+main section {
+    margin-bottom: 2rem;
+}
+
+main section h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007BFF;
+    margin-bottom: 1rem;
+}
+
+main section p,
+main section ul {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+main section ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+main section ul li {
+    margin: 0.5rem 0;
+}
+
+main section ul ul {
+    list-style-type: circle;
+    padding-left: 1.5rem;
+}
+
+/* Style untuk beranda */
+#beranda {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    margin: 1rem auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+#beranda h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#beranda p {
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+#beranda h3 {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+#search-form {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+#search-form label {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#search-form select,
+#search-form button {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#search-form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#search-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Style untuk destinasi */
+#destinasi {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    margin: 1rem auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.destinasi-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.destinasi-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: white;
+}
+
+.destinasi-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.destinasi-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.destinasi-item h3 {
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Style untuk pop-up */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 1.5rem;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.popup .close {
+    float: right;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #007BFF;
+}
+
+/* Style tambahan untuk hasil pencarian */
+.hasil-pencarian {
+    margin-top: 1rem;
+    text-align: left;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hasil-pencarian button {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hasil-pencarian button:hover {
+    background-color: #0056b3;
+}
+
+/* Style untuk kontak */
+#kontak {
+    padding: 2rem;
+    text-align: center;
+}
+
+#ulasan-form {
+    margin: 1rem auto;
+    max-width: 400px;
+    text-align: left;
+}
+
+#ulasan-form label,
+#ulasan-form input,
+#ulasan-form textarea,
+#ulasan-form button {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    width: 100%;
+    display: block;
+}
+
+#ulasan-form input,
+#ulasan-form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#ulasan-form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#ulasan-form button:hover {
+    background-color: #0056b3;
+}
+
+#list-ulasan {
+    margin-top: 1rem;
+    text-align: left;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#list-ulasan li {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Style untuk footer */
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+

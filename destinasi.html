@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Indonesia - Destinasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <h1>Explore Indonesia</h1>
+        <p>Temukan destinasi wisata terbaik di Indonesia!</p>
+        <nav>
+            <a href="beranda.html">Beranda</a>
+            <a href="destinasi.html">Destinasi</a>
+            <a href="artikel.html">Artikel</a> 
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- Destinasi -->
+    <section id="destinasi">
+        <h2>Destinasi Populer</h2>
+
+        <!-- Kategori Pantai -->
+        <h3 id="pantai">Pantai</h3>
+        <div class="destinasi-container">
+            <div class="destinasi-item" onclick="showInfo('pantai-pink')">
+                <img src="Pink.jpg" alt="Pantai Pink">
+                <h3>Pantai Pink</h3>
+            </div>
+            <div class="destinasi-item" onclick="showInfo('pantai-kuta')">
+                <img src="Kuta.jpg" alt="Pantai Kuta">
+                <h3>Pantai Kuta</h3>
+            </div>
+            <div class="destinasi-item" onclick="showInfo('pantai-parangtritis')">
+                <img src="Parangtritis.jpg" alt="Pantai Parangtritis">
+                <h3>Pantai Parangtritis</h3>
+            </div>
+        </div>
+
+        <!-- Kategori Gunung -->
+        <h3 id="gunung">Gunung</h3>
+        <div class="destinasi-container">
+            <div class="destinasi-item" onclick="showInfo('gunung-rinjani')">
+                <img src="Rinjani.jpg" alt="Gunung Rinjani">
+                <h3>Gunung Rinjani</h3>
+            </div>
+            <div class="destinasi-item" onclick="showInfo('gunung-bromo')">
+                <img src="Bromo.jpg" alt="Gunung Bromo">
+                <h3>Gunung Bromo</h3>
+            </div>
+            <div class="destinasi-item" onclick="showInfo('gunung-merapi')">
+                <img src="Merapi.jpg" alt="Gunung Merapi">
+                <h3>Gunung Merapi</h3>
+            </div>
+        </div>
+
+        <!-- Kategori Budaya -->
+        <h3 id="budaya">Budaya</h3>
+        <div class="destinasi-container">
+            <div class="destinasi-item" onclick="showInfo('candi-borobudur')">
+                <img src="Borobudur.jpg" alt="Candi Borobudur">
+                <h3>Candi Borobudur</h3>
+            </div>
+            <div class="destinasi-item" onclick="showInfo('keraton-yogyakarta')">
+                <img src="Keraton.jpg" alt="Keraton Yogyakarta">
+                <h3>Keraton Yogyakarta</h3>
+            </div>
+            <div class="destinasi-item" onclick="showInfo('desa-penglipuran')">
+                <img src="Penglipuran.jpg" alt="Desa Wisata Penglipuran">
+                <h3>Desa Wisata Penglipuran</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pop-up Informasi -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h3 id="popup-title"></h3>
+            <p id="popup-text"></p>
+            <img id="popup-image" width="100%" alt="Gambar destinasi">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

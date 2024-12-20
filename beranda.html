@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Indonesia - Beranda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="banner">
+            <img src="Logo.png" alt="Explore Indonesia Banner">
+            <div class="banner-text">
+                <h1>Explore Indonesia</h1>
+                <p>Temukan destinasi wisata terbaik di Indonesia!</p>
+            </div>
+        </div>
+        <nav>
+            <a href="beranda.html">Beranda</a>
+            <a href="destinasi.html">Destinasi</a>
+            <a href="artikel.html">Artikel</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- Beranda -->
+    <section id="beranda">
+        <h2>Selamat Datang di Explore Indonesia</h2>
+        <p>
+            Website ini dibuat untuk menyajikan berbagai informasi terkait dengan keindahan Indonesia, khususnya dalam hal pariwisata.
+            Dengan tampilan menu destinasi yang memperkenalkan berbagai destinasi menarik terkait tempat-tempat wisata di Indonesia.
+        </p>
+        <p>
+            Di dalamnya, Anda dapat menemukan gambar dan video yang menampilkan pesona tempat wisata seperti
+            <strong>Pantai Pink</strong>, <strong>Pantai Kuta</strong>, <strong>Pantai Parangtritis</strong>, <strong>Gunung Rinjani</strong>,
+            <strong>Gunung Bromo</strong>, <strong>Gunung Merapi</strong>, <strong>Candi Borobudur</strong>, <strong>Keraton Yogyakarta</strong>,
+            dan <strong>Desa Wisata Penglipuran</strong>, memberikan pengalaman visual yang memukau dan informasi lengkap untuk merencanakan perjalanan Anda.
+        </p>
+
+        <!-- Link Menuju Artikel -->
+        <h3>Jangan Lewatkan Panduan Perjalanan Lengkap!</h3>
+        <p>
+            Kunjungi halaman <a href="artikel.html" style="color: blue; text-decoration: underline;">Artikel</a> kami untuk mengetahui lebih banyak tentang:
+        </p>
+        
+        <ul class="artikel-list">
+            <li class="artikel-item"><strong>Tips Perjalanan</strong></li>
+            <li class="artikel-item"><strong>Aktivitas yang Bisa Dilakukan</strong></li>
+            <li class="artikel-item"><strong>Itinerary (Rencana Perjalanan)</strong></li>
+        </ul>
+
+        <!-- Form Pencarian -->
+        <h3>Cari Destinasi Anda</h3>
+        <form id="search-form">
+            <label for="kategori">Pilih kategori destinasi favorit Anda:</label>
+            <select id="kategori">
+                <option value="pantai">Pantai</option>
+                <option value="gunung">Gunung</option>
+                <option value="budaya">Budaya</option>
+            </select>
+            <button type="submit">Cari</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Explore Indonesia. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Wisata - Kontak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <h1>Explore Indonesia</h1>
+        <p>Temukan destinasi wisata terbaik di Indonesia!</p>
+        <nav>
+            <a href="beranda.html">Beranda</a>
+            <a href="destinasi.html">Destinasi</a>
+            <a href="artikel.html">Artikel</a> 
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- Bagian Kontak -->
+    <section id="kontak">
+        <h2>Hubungi Kami</h2>
+        <p>Jika Anda memiliki pertanyaan, masukan, atau ingin berbagi pengalaman Anda, jangan ragu untuk menghubungi kami melalui informasi berikut:</p>
+        <ul>
+            <li><strong>Email:</strong> andreadryan130@gmail.com</li>
+            <li><strong>Nomor Telepon:</strong> +62 878-7992-0767</li>
+        </ul>
+
+        <h2>Ulasan Pelanggan</h2>
+        <form id="ulasan-form">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" required>
+            <label for="ulasan">Ulasan:</label>
+            <textarea id="ulasan" rows="4" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+        <ul id="list-ulasan" style="list-style:none; padding:0;"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
